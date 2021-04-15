@@ -1,0 +1,30 @@
+// App
+.app-wrapper {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #e5e5e5;
+}
+
+.app {
+  width: 1024px;
+  height: 810px;
+  margin: auto;
+  background-color: yellow;
+  display: flex;
+}
+
+.error {
+  font-size: 14px;
+  color: $redClr;
+  font-weight: bold;
+  position: absolute;
+}
+
+.backend-error {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}

@@ -1,0 +1,25 @@
+$blueClr: #579aff;
+$redClr: #ff5757;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@import './app';
+@import './contacts';
+@import './contact';
+@import './button';
+@import './circle-button';
+@import './modal';
+
+body {
+  margin: 0;
+  font-family: 'Lato';
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}

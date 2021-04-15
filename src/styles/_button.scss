@@ -1,0 +1,58 @@
+// Button
+.button {
+  cursor: pointer;
+  font-family: 'Lato';
+  width: 120px;
+  height: 36px;
+  border-radius: 0px;
+  text-transform: capitalize;
+  font-size: 20px;
+  border: 0;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    opacity: 0.7;
+  }
+  &:disabled {
+    background: lightgray !important;
+    color: #ffffff;
+    border: none !important;
+    cursor: default;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.add-email-button {
+  height: 32px;
+  display: flex;
+  width: 110px;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.add-email-text {
+  color: $blueClr;
+}
+
+.cancel-button {
+  background: #f9fbff;
+  border: 1px solid $blueClr !important;
+  margin-right: 30px;
+}
+
+.save-button {
+  background: $blueClr;
+  color: #ffffff;
+}
+
+.delete-button {
+  background: $redClr;
+  color: #ffffff;
+}

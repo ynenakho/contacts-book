@@ -1,0 +1,439 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+.app-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #e5e5e5;
+}
+
+.app {
+  width: 1024px;
+  height: 810px;
+  margin: auto;
+  background-color: yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.error {
+  font-size: 14px;
+  color: #ff5757;
+  font-weight: bold;
+  position: absolute;
+}
+
+.backend-error {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.contacts {
+  width: 228px;
+  height: 100%;
+  background-color: #f8faff;
+  padding: 10px 0;
+}
+
+.title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 17px;
+  margin-bottom: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title {
+  font-size: 36px;
+  margin: 0;
+}
+
+.list {
+  height: 735px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.list-element {
+  cursor: pointer;
+  width: 228px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
+
+.list-element:hover {
+  background: lightgrey;
+}
+
+.list-element p {
+  color: #444444;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.selected-element {
+  background-color: #579aff;
+}
+
+.selected-element:hover {
+  background: #579aff;
+}
+
+.load-more-wrapper {
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.load-more-button {
+  cursor: pointer;
+  margin: auto;
+  color: #579aff;
+}
+
+.load-more-button:hover {
+  color: #1573ff;
+}
+
+.load-more-disabled {
+  cursor: default;
+  color: lightgray;
+}
+
+.load-more-disabled:hover {
+  color: lightgray;
+}
+
+.contact {
+  height: 100%;
+  width: calc(100% - 228px);
+  background-color: #ffffff;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-title {
+  margin-bottom: 10px;
+  color: #579aff;
+}
+
+input,
+label {
+  display: block;
+}
+
+label {
+  color: #555555;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.input {
+  width: 345px;
+  height: 36px;
+  background: #f9fbff;
+  border: 1px solid #d7e7ff;
+  padding: 0 10px;
+  font-family: 'Lato';
+  font-size: 18px;
+  color: #444444;
+}
+
+.inputs-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.email-container-wrapper {
+  margin-top: 23px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.buttons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.email-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 32px;
+  color: #555555;
+}
+
+.email-wrapper:hover .circle-delete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.email {
+  margin: 0 14px 0 0;
+}
+
+.email-input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 345px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.email-input {
+  width: 300px;
+}
+
+.button {
+  cursor: pointer;
+  font-family: 'Lato';
+  width: 120px;
+  height: 36px;
+  border-radius: 0px;
+  text-transform: capitalize;
+  font-size: 20px;
+  border: 0;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  opacity: 0.7;
+}
+
+.button:disabled {
+  background: lightgray !important;
+  color: #ffffff;
+  border: none !important;
+  cursor: default;
+}
+
+.button:disabled:hover {
+  opacity: 1;
+}
+
+.add-email-button {
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 110px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.add-email-button:hover {
+  opacity: 0.7;
+}
+
+.add-email-text {
+  color: #579aff;
+}
+
+.cancel-button {
+  background: #f9fbff;
+  border: 1px solid #579aff !important;
+  margin-right: 30px;
+}
+
+.save-button {
+  background: #579aff;
+  color: #ffffff;
+}
+
+.delete-button {
+  background: #ff5757;
+  color: #ffffff;
+}
+
+.circle-button {
+  all: unset;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  background: #579aff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.circle-button:hover {
+  opacity: 0.7;
+}
+
+.vertical {
+  width: 2px;
+  height: 24px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#ffffff)), -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#ffffff)), #ffffff;
+  background: linear-gradient(0deg, #ffffff, #ffffff), linear-gradient(0deg, #ffffff, #ffffff), #ffffff;
+  position: absolute;
+}
+
+.horizontal {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+}
+
+.circle-sm {
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+  margin: -4px;
+}
+
+.circle-sm:hover {
+  opacity: 1;
+}
+
+.circle-delete {
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+  margin: -4px;
+  background: #ff5757;
+  display: none;
+}
+
+.modal-wrapper {
+  visibility: visible;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+}
+
+.modal-wrapper-hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  min-width: 300px;
+  background-color: #ffffff;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  -webkit-box-shadow: -16px 16px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: -16px 16px 16px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal h2 {
+  margin: 0 0 15px 0;
+}
+
+.modal-hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato';
+  font-size: 18px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+/*# sourceMappingURL=styles.css.map */
